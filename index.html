@@ -1,0 +1,499 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<title>Сайт на HTML5 от Кактотак.BY</title>
+		<!--[if IE]>
+			<script>
+				document.createElement('header');
+				document.createElement('nav');
+				document.createElement('section');
+				document.createElement('article');
+				document.createElement('aside');
+				document.createElement('footer');
+			</script>
+		<![endif]-->
+		<style>
+/* обнуляем все элементы */
+			* 
+				{
+				margin:0;
+				padding:0;
+				outline:none;
+				}  
+				
+/* --- Общие стили --- */ 
+			
+			html 
+				{
+				font-size:75%;
+				height: 100%;;
+				} 
+			body 
+				{
+				font:normal 1em/1.3 arial, helvetica, sans-serif;
+				color:#333;
+				height:100%;
+				background:#f0f0f0;
+				} 
+			a 
+				{
+				color:#2b82dc;
+				}
+			aside:hover a, footer:hover a, p:hover a 
+				{
+				color:#0E6994;
+				} 
+			a:hover 
+				{
+				text-decoration:none;
+				color:#0E6994;
+				} 
+			abbr 
+				{
+				border-bottom:1px dotted #2b82dc;
+				cursor:help;
+				} 
+			h1, h2, h3, h4, h5, h6 
+									{
+									font-weight:normal;
+									line-height:1;
+									margin:4px 0 12px;
+									padding:4px;
+									color:#2ca9e4;
+									} 
+			h1 
+				{
+				font-size:1.88em;
+				} 
+			h2 + a 
+					{
+					margin-bottom:10px;
+					
+					}
+			li 
+				{
+				margin-bottom:10px;
+				}
+			p 
+				{
+				text-align:justify;
+				word-spacing:.1ex;
+				line-height:1.6;
+				padding-left:4px;
+				margin-bottom:1em;
+				} 
+			ul 
+				{
+				list-style:none;
+				} 
+			ol 
+				{
+				list-style-position:inside;
+				}
+			.video 
+					{
+					 margin: 0 auto; 
+					 text-align: center;
+					
+					}
+			summary 
+					{
+					margin-left:1em;
+					font-weight:bold;
+					color: #2ca9e4;
+					}
+			form 
+				{
+				margin:1em;
+				padding:.5em;
+				}
+			input[id=contact_name]
+								{
+								padding-left:4px;
+								margin-left:53px;
+								}
+								
+			input[id=contact_email]
+								{
+								padding-left:5px;
+								margin-left:41px;
+								}
+			input[id=contact_phone]
+								{
+								padding-left:5px;
+								margin-left:26px;
+								}
+			input[type=submit] 
+								{
+								border-radius:10px;
+								color: #2ca9e4;
+								padding:0.5em;
+								margin-left:2em;
+								}
+			/* делаем семантические тэги - блочными */ 	
+			header, nav, section, article, aside, footer 
+														{
+														display:block;
+														position:relative;
+														} 
+														
+			/* выравниваем страницу по центру, делаем отступы и цвет фона */ 			
+			#main 
+				{
+				width:1188px;
+				min-height:100%;
+				padding:0 30px;
+				margin:0 auto;
+				background:#fff;
+				} 
+				
+			/* пишем класс для шапки - header */ 			
+			.h 
+				{
+				overflow:hidden;
+				height:150px;
+				
+				
+				} 
+			.h img {
+				float:left;
+                width: 150px;
+            }
+			.h h1 {
+			
+            font-size: 40px;
+            margin-top: 38px;
+            margin-left: 180px;
+			
+				}
+			.h div {
+            height: 5%;
+            vertical-align: middle;
+			
+				}
+				
+			/* меню навигации */ 
+			nav 
+				{
+				font-size:1.3em;
+				width:170px;
+				height:190px;
+				float: left;
+				background:#4f4e4e;
+				padding-top: 30px;
+				/* border-radius:20px;*/
+				} 
+			nav li 
+					{
+					float:left;
+					margin:8px 20px 2px;
+					} 
+			nav a 
+					{
+					font-weight:bold;
+					text-decoration:none;
+					color:#fff;
+					} 
+			nav a:hover 
+						{
+						text-decoration:underline;
+						color:#fff;
+						} 
+			
+			/* область основного контента */ 
+			section 
+					{
+					overflow:hidden;
+					font-size: 15px;
+					padding-left: 1px;
+					padding-top: 9px;
+					}
+					
+			/* стиль для картинки */ 
+			.image 
+					{
+					width:20px;
+					height: 20px;
+					margin:13px 0;
+					
+					} 
+			figure {
+					padding: 10px; /* Поля вокруг */
+					display: block; /* Блочный элемент */
+					width: 550px; /* Ширина */
+					margin: 0 10px 10px 0; /* Отступы */
+					text-align: center; /* Выравнивание по центру */
+				   }
+			figcaption {
+						color: #2ca9e4; /* Цвет текста */
+						font-size:1.2em;
+					   }		
+			 mark {
+					background: #ffec82;
+					padding: 1px 3px;
+					border: 1px dashed #333;
+				   }
+			/* внутренняя область контента */ 
+			section section 
+							{
+							float:left;
+							width:630px;
+							
+							} 
+							
+			/* правая часть */ 
+			aside 
+				{
+				overflow:hidden;
+				width:310px;
+				padding:10px 37px;
+				} 
+				
+			/* нижняя часть - footer */ 
+			footer 
+					{
+					height:40px;
+					padding:25px 25px 0;
+					margin:20px 0 0;
+					border-top:1px solid #0E6994;
+					font-size: 15px;
+					} 
+					
+			/* стили для выделения областей HTML */ 
+			.tag 
+				{
+				position:absolute;
+				right:6px;top:2px;
+				font-size:11px;
+				font-style:normal;
+				} 
+			header:hover, nav:hover, section:hover, article:hover, aside:hover, footer:hover 
+																							{
+																							background:#FFC327;
+																							color:#fff;
+																							} 
+			section section:hover, section aside:hover 
+														{
+														background:#FFD25D;
+														} 
+			section article:hover 
+									{
+									background:#FFC327;
+									} 
+			article header:hover 
+									{
+									background:#FFD25D;
+									color:#777;
+									} 
+			section article .tag 
+								{
+								top:12px;
+								} 
+			article header .tag 
+								{
+								right:70px;
+								top:2px;
+								} 
+			aside .tag 
+						{
+						top:12px;
+						}
+						.img{
+							width: 500px;
+						}
+		
+		</style>
+	</head>
+	<body>
+		<div id="main"> <!-- Главный блок всей страницы (обертка) -->
+		
+		
+			<!-- Тэг header  -->
+			<header class="h">
+				<div>
+				
+                    <!-- Тэг section для вставки изображения логотипа -->
+                    <img src="images/KKT.png" alt="" />
+                    
+                </div>
+				<h1>"Электронны магазин(витрина)" Кактотак.BY</h1>
+				
+			</header>
+			<!-- Тэг nav -->
+			
+			<nav>
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="indexMy.html">О магазине</a></li>
+					<li><a href="indexPortfolio.html">Портфолио</a></li>
+					<li><a href="indexVitrina.html">Витрина</a></li>
+					<li><a href="indexMe.html">О разработчике</a></li>
+								</ul>
+				<h1 style="font-size: 0;"> Навигация</h1>
+							
+			</nav>
+			
+	
+			
+			<!-- Блок всего контента страницы -->
+			<section>
+				<h2>Веб-студия Кактотак.BY</h2>
+				
+				
+				<!-- Блок левой части контента страницы -->
+				<section>
+					
+					<h2>Бизнесу нужно что-то однокликовое: виртуальные витрины помогают быстро перейти в онлайн</h2>
+					<!-- Первая статья контента-->
+					<article>
+						<header>
+							<h3>Дизайн и настройка интерфейса</h3>
+							<!--i class="tag">&lt;header&gt;</!i-->
+						</header>
+
+					
+						
+
+						<p>Компания «<a href="/">Кактотак</a>» предлагает комплекс высококачественных услуг 
+							по созданию, разработке и поддержке Интернет-ресурсов в сети на 
+							базе <a href="/cms/">Систем управления сайтом</a> 
+							(<abbr title="Content Management System">CMS</abbr>).</p>
+						<p>Конструкторов сайтов для интернет-магазинов сейчас очень много. Но пытались ли вы заказать что-то на сайте, который разрабатывался без профессионала, силами самого предпринимателя? Зачастую такие страницы не доработаны технически (возникают проблемы с оплатой, не настроена сортировка товаров и т.д.).
+
+							
+						</p>
+						
+						<p>
+							Самое распространенное возражение предпринимателя при создании интернет-магазина: «Это сложно, мне нужен будет специалист». Ведь для корректной настройки сайта понадобится подключение плагинов (модулей, которые расширяют возможности страницы). Нужно довольно глубоко погрузиться в разработку и сравнить не один десяток интернет-магазинов, чтобы понять, какие плагины добавить на ваш сайт. Многие надстройки оплачиваются дополнительно.
+							</p>
+							<p>
+
+								В отличие от интернет-магазина, онлайн-витрина товаров очень проста в настройке и оформлении и не требует привлечения специалиста.
+							</p>
+							<p>
+
+								Витрина — это виртуальная полка товаров с готовым дизайном. В подобных сервисах нет шаблонов, а элементы уже расставлены логически. Все страницы выглядят одинаково, подобно профилям магазинов на популярных маркетплейсах. Оплачивать какие-либо плагины не нужно, поскольку все базовые модули — сортировка, поиск, группировка товаров, уже встроены в решение.</p>
+							
+						<!--i class="tag">&lt;article&gt;</!i-->
+						<details>
+							<summary>
+								Оставить заявку на создание веб-сайта
+							</summary>
+							<form>
+									<fieldset style="border: 0;">						
+									<label for="contact_name">Имя:</label>
+									<input id="contact_name" placeholder="Введите Ваше имя" autofocus><br/>
+									<label for="contact_email">E-mail:</label>
+									<input type="email" id="contact_email" placeholder="Введите Ваш электронный ящик"><br/>
+									<label for="contact_phone">Телефон:</label>
+									<input type="tel" id="contact_phone" placeholder="Введите номер Вашего телефона"><br/>
+									<label for="contact_callback">Время звонка:</label>
+									<input type="text" id="contact_callback" placeholder="Введите время, когда Вам можно перезвонить"><br/>
+									<label for="contact_priority">Приоритет:</label>
+									<input type="range" min="1" max="5" value="1" id="contact_priority"><br/> <br />
+									<input type="submit" value="Запрос вызова">
+
+								</fieldset>
+								</form>
+						</details>
+					</article>
+					
+					<!-- Вторая статья контента -->
+					<article>
+						<header>
+							<h3>Пример продуктовой онлайн-витрины</h3>
+							<!--i class="tag">&lt;header&gt;</!i-->
+						</header>
+						<p>Оформить онлайн-витрину не сложнее, чем заполнить профиль в социальной сети: загружаете «аватарку», вводите имя (название), указываете город (адрес), добавляете пару строк <em>
+
+							«о себе», а вместо постов размещаете карточки с описанием товаров и услуг.
+						</em>
+					</p>
+						<!--i class="tag">&lt;article&gt;</!i-->
+						<details>
+							<summary>Подробней..</summary>
+							<p>
+								От того, насколько дружественно и качественно <mark>разработан дизайн</mark>, зависит дальнейшее
+								пребывание пользователя на Вашем сайте.
+							</p>
+							<figure>
+								<img class="img" src="images/MSQRD.png" alt="Вэб-дизайнеры компании Кактотак.BY" title="Вэб-дизайнеры компании Кактотак.BY">
+								<figcaption style="width: 500px;">Вэб-дизайнеры компании Кактотак.BY</figcaption>
+							</figure>
+						</details>
+					</article>
+					
+					<!-- Третья статья контента -->
+					<article>
+						<header>
+							<h3>HTML верстка сайтов</h3>
+							<!--i class="tag">&lt;header&gt;</!i-->
+						</header>
+						<p><em>Верстка макета (HTML верстка)</em> – это процесс формирования веб-страницы, по средствам кода соответствующего языка разметки (<abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="eXtensible Markup Language">XML</abbr> и т.п.), так же состоящей из стилей оформления (<abbr title="Cascading Style Sheets">CSS</abbr>) и подгружаемых картинок и фонов, на которые специальным образом разбивается макет сайта, в соответствии с дизайном, как правило, в формате <abbr title="Photoshop Document">PSD</abbr>.</p>
+						<!--i class="tag">&lt;article&gt;</!i-->
+					</article>
+
+						<article>
+							<header>
+								<h3 style="font-size: 23px;">Мы трансформируем желания клиентов в реальность!</h3>
+								<!--i class="tag">&lt;header&gt;</!i-->
+								<p class="video">
+									<video width="600" src="video/transformers480.ogg" controls="controls" autoplay="autoplay">
+									</video>
+								  </p>
+							</header>
+							<!--i class="tag">&lt;article&gt;</!i-->
+						</article>
+					
+						<!--i class="tag">&lt;section&gt;</!i-->
+				</section> <!-- Нижняя граница левой части контента -->
+				
+				<!-- Тэг правой колонки контента -->
+				<aside>
+					<h2><a href="/service/">Новости компаний</a></h2>
+					<ul>
+						<li>
+						<h3><a href="/service/website/">Подключение платежного сервиса</a></h3>
+						<em>Для приёма банковских карт интернет-магазин должен зарегистрироваться 
+							в системе электронных платежей (например, Visa или MasterCard), а затем 
+							заключить с банком договор интернет-эквайринга. Деньги будут поступать на 
+							расчётный счёт фирмы или на счёт посредника. В любом случае, за каждый платёж банк будет взимать комиссию (от 1,5%). Подключение эквайринга может занять от 3 до 7 дней. Также на сайте интернет-магазина нужно будет настроить платёжное окно, что потребует вмешательства профессионала и займёт дополнительное время. <abbr title="Content Management System">CMS</abbr></em>
+						</li>
+						<li>
+						<h3 style="margin-top: 20px;"><a href="/service/design/">Техподдержка</a></h3>
+						<em>К кому бежать, если что-то «отвалится» на сайте? В зависимости от проблемы, вам нужно будет обращаться к разным специалистам — к разработчику, к владельцу хостинга, к представителям платёжных сервисов... Есть вероятность, что вас будут направлять от одного исполнителя к другому.</em>
+						</li>
+						<li>
+						<h3 style="margin-top: 20px;"><a href="/service/markup/">Стоимость создания</a></h3>
+						<em>Собственный интернет-магазин может обойтись в несколько десятков - несколько сотен тысяч рублей. Стоимость зависит от сложности разработки, выбранной платёжной системы, необходимости привлекать кого-то для выгрузки товаров и оформления документов. Также дополнительными расходами будут подключение сервисов доставки и продвижение (онлайн-реклама). <abbr title="HyperText Markup Language">HTML</abbr>/<abbr title="Extensible Hypertext Markup Language">XHTML</abbr> верстка сайта в строгой технической спецификации</em>
+						</li>
+					</ul>
+					<br />
+					<h2 style="margin-top: 10px;">Наши преимущества</h2>
+						<ol style="margin-top: 20px; line-height: 20px">
+							<li>Самый <a href="/cms/">широкий выбор CMS</a> для реализации любой идеи;</li>
+							<li>Создание уникального функционала для сайта;</li>
+							<li>Подбор наиболее оптимальной <abbr title="Content Management System">CMS</abbr> для поставленной задачи;</li>
+							<li><a href="/service/website/">Качественная разработка сайта</a> на каждом этапе его реализации;</li>
+							<li>Применение новых технологий в разработке сайта: jQuery, HTML5, CSS3;</li>
+							<li>Бесплатные консультации и сопровождение проекта в течение месяца;</li>
+							<li>Скидки постоянным клиентам и индивидуальные бонусные программы.</li>
+					</ol>
+					<!--i class="tag">&lt;aside&gt;</!i-->
+				</aside>
+				<!--i class="tag">&lt;section&gt;</!i-->
+			</section> <!-- Нижняя граница контента -->
+			
+			<!-- Авторская часть страницы footer -->
+			<footer>
+				Copyright &copy; 2021 <a href="/" rel="copyright">ООО Кактотак</a>. All rights reserved. 
+				<br>
+				<a href="tel:+3758888888">Тел +3758888888</a>&nbsp; &nbsp; <a href="#">Е-mail: Кактотак@</a>&nbsp; &nbsp; <a href="#">Skype: Кактотак</a><br>
+			</footer>
+		</div> <!-- Границы главного блока (обертки) страницы -->
+	</body>
+</html>
+
